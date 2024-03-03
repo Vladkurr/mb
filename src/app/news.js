@@ -1,0 +1,1 @@
+import(/* webpackChunkName: "news.style" */ '../style/news.scss')

@@ -1,0 +1,1 @@
+import(/* webpackChunkName: "bacteria.style" */ '../style/bacteria.scss')

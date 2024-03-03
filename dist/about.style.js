@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbiotech_frontend=self.webpackChunkbiotech_frontend||[]).push([[356],{3348:function(e,n,t){t.r(n)}}]);

@@ -1,0 +1,1 @@
+import(/* webpackChunkName: "services.style" */ '../style/services.scss')

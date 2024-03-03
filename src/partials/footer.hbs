@@ -1,0 +1,25 @@
+<footer class="footer">
+<div class="container">
+  <div class="footer_wrapper">
+    <div class="footer__info">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.svg" alt="">
+      </a>
+      <nav class="footer__info__nav">
+        <ul>
+          {{#each menu}}
+            {{#with this}}<li><a href="{{link}}">{{title}}</a></li>{{/with}}
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
+    <hr color="#6A6A6A" style="margin: 50px 0;">
+    <div class="footer__copyright">
+      <p>© 2023 ФГБОУ ВО КубГАУ. Все права зарезервированы</p>
+      <a href="https://webgromov.ru" target="_blank" class="sign">webgromov</a>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>

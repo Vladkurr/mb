@@ -1,0 +1,87 @@
+@import 'core/base';
+
+.catalog {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  column-gap: 50px;
+  align-items: flex-start;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 30px;
+    align-items: flex-start;
+    &__item {
+      a {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #E6E6E6;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 15px;
+        transition: .3s ease all;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1400px) {
+  .catalog {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media(max-width: 1200px) {
+  .catalog {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .catalog {
+    grid-template-columns: auto;
+    row-gap: 30px;
+    &__list {
+      // grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 15px;
+    }
+  }
+}
+@media(max-width: 800px) {
+  .catalog {
+    &__list {
+      &__item {
+        a {
+          padding: 30px 20px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 600px) {
+  .catalog {
+    &__list {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .catalog {
+    &__list {
+      &__item {
+        a {
+          &:hover {
+            background-color: $color-main;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+import(/* webpackChunkName: "publications.style" */ '../style/publications.scss')

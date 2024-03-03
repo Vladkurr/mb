@@ -1,0 +1,1 @@
+import(/* webpackChunkName: "404.style" */ '../style/404.scss')
